@@ -1,5 +1,5 @@
 pipeline {
-    agent { node { lable 'Built-In' } }
+    agent { node { label 'Built-In' } }
 
     stages {
         stage ('Hello') {
