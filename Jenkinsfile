@@ -1,30 +1,21 @@
 pipeline {
-    agent any
+    agent { node { lable 'Built-In' } }
 
     stages {
-        stage ('Compile Stage') {
+        stage ('Hello') {
 
             steps {
                 
-                    sh 'mvn clean compile'
+                    echo 'Hello !!!'
                 }
             
         }
 
-        stage ('Testing Stage') {
+        stage ('Good Bye') {
 
             steps {
                 
-                    sh 'mvn test'
-                }
-            
-        }
-
-
-        stage ('Install Stage') {
-            steps {
-                
-                    sh 'mvn install'
+                    echo 'Good Bye !!!'
                 }
             
         }
