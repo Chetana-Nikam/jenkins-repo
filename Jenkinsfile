@@ -23,10 +23,9 @@ pipeline {
             steps {
                 
                     echo 'Hello !!!'
-                    sh ...
-                        touch 11.txt
-                        pwd
-                    ...
+                
+                    sh 'touch 11.txt'
+                    sh 'pwd'
                 
                     echo "Hello ${params.PERSON}"
     
