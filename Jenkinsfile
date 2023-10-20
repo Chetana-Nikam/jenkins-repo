@@ -1,6 +1,10 @@
 pipeline {
-    agent { node { label 'built-in' 
-            customworkspace '/home/ec2-user' } }
+    agent { 
+        node { 
+            label 'built-in' 
+            customworkspace '/home/ec2-user' 
+        } 
+    }
     parameters {
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
 
