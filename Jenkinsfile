@@ -26,7 +26,9 @@ pipeline {
                 
                     sh 'touch 11.txt'
                     sh 'pwd'
-                
+                    echo 'Your previous buid no is: ${BUILD_NUMBER}'
+                    echo 'Your previous buid no is: ${BUILD_NUMBER}'
+                    echo 'Your jenkins home is: ${JENKINS_HOME}'
                     echo "Hello ${params.PERSON}"
     
                     echo "Biography: ${params.BIOGRAPHY}"
