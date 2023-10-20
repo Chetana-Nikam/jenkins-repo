@@ -23,6 +23,10 @@ pipeline {
             steps {
                 
                     echo 'Hello !!!'
+                    sh ...
+                        touch 11.txt
+                        pwd
+                    ...
                 
                     echo "Hello ${params.PERSON}"
     
